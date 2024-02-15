@@ -42,12 +42,12 @@ namespace QuizGame
             }
             reader.Close();
 
-            reader = new StreamReader(PathStats, Encoding.Default);
+            reader = new StreamReader(PathStats);
             while ((line = reader.ReadLine()) != null)
             {
-                line = line.Replace(" ", "");
+                
                 string[] words = line.Split('-');
-                Statistics.Add(new KeyValuePair<string, string>(words[0], words[1]), Convert.ToInt32(words[2]));
+                Statistics.Add(new KeyValuePair<string, string>(words[0].Trim(), words[1].Trim()), Convert.ToInt32(words[2]));
             }
             reader.Close();
             ShowLoginOrRegister(); // внутри будет инициализирован MyAccount
