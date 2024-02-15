@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <quizes>
-	<quiz id="0" name="Георафический тест">		
+	<quiz id="0" name="Географический тест">		
 		<item id="0">
 			<question>Столица Беларуси?</question>
 			<possible option="0">Гродно</possible>
